@@ -1,0 +1,23 @@
+{
+  "name": "aws-sdk-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "2.494.0",
+    "chalk": "2.4.2",
+    "clear": "0.1.0",
+    "figlet": "1.2.3",
+    "inquirer": "6.5.0",
+    "lodash": "4.17.14"
+  },
+  "devDependencies": {
+    "standard": "13.0.2"
+  }
+}
