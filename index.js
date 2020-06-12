@@ -8,7 +8,7 @@ clear()
 
 console.log(
   chalk.yellow(
-    figlet.textSync('AWS-SDK-CLI', { horizontalLayout: 'default' })
+    figlet.textSync('AWS-SDK-CLI', { horizontalLayout: 'fitted' })
   )
 )
 
