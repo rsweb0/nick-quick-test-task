@@ -2,7 +2,7 @@ const chalk = require('chalk')
 const clear = require('clear')
 const figlet = require('figlet')
 const inquirer = require('./lib/inquirer')
-const { listAllFiles } = require('./lib/aws')
+const { listAllFiles, uploadFile } = require('./lib/aws')
 
 clear()
 
@@ -17,9 +17,12 @@ const run = async () => {
   switch (result.operation) {
     case 'List All Files':
       const allFiles = await listAllFiles()
-      console.log(chalk.green(allFiles))
+      console.table(allFiles, ['Key', 'ETag', 'LastModified'])
       break
     case 'Upload A File':
+      const { filePath } = await inquirer.uploadFile()
+      const fileUrl = await uploadFile(filePath)
+      console.log(chalk.green(`File Uploaded Successfully URL: ${fileUrl}`))
       break
     case 'Find Files':
       break
