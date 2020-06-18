@@ -11,7 +11,7 @@ CLI provides following features
 
 ## Setup
 
-export your `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` into console before using the CLI
+export your `AWS_BUCKET_NAME`, `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` into console before using the CLI
 
 
 ## Globally
